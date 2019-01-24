@@ -54,7 +54,6 @@ a {
 .img-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   margin: auto;
   background-color: black;
   text-align: center;
