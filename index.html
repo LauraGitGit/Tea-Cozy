@@ -3,8 +3,13 @@
   <style></style>
   <head>
     <title>Tea Cozy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/resources/style.css"/>
   </head>
+  
   <body>
     <header>
       <img
@@ -12,11 +17,12 @@
         src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-logo.png"
         alt="Logo"/>
       <nav class="header-nav">
-        <span><a href="#mission">Mission</a></span>
-        <span><a href="#featured-tea">Featured Tea</a></span>
-        <span><a href="#locations">Locations</a></span>
+        <span><a href="#mission" title="Our Mission"><i class="fas fa-leaf"></i></a></span>
+        <span><a href="#featured-tea" title="Featured Tea"><i class="fas fa-mug-hot"></i></a></span>
+        <span><a href="#locations" title="Locations"><i class="fas fa-location-dot"></i></a></span>
       </nav>
     </header>
+
 
     <div class="main-container">
       <div id="mission" class="upper-container">
@@ -66,7 +72,7 @@
       </div>
 
       <div id="locations" class="bottom-container">
-        <h2>Locations</h2>
+        <h2><i class="fas fa-map-marker-alt"></i> Locations</h2>
         <div class="locations">
           <div class="location">
             <h3>Downtown</h3>
@@ -91,12 +97,28 @@
     </div>
 
     <footer>
-      <div class="footer">
-        <h2>The Tea Cozy</h2>
-        <h5>contact@theteacozy.com</h5>
-        <h5>917-555-8904</h5>
+      <div class="footer-content">
+        <div class="footer-info">
+          <h2>The Tea Cozy</h2>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> contact@theteacozy.com</p>
+            <p><i class="fas fa-phone"></i> 917-555-8904</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
-      <div class="copy-right"><h5>copyright The Tea Coz 2017</h5></div>
+      <div class="footer-bottom">
+        <p class="copyright">© <span id="year"></span> The Tea Cozy. All rights reserved.</p>
+      </div>
     </footer>
+  
+    <button id="topBtn" aria-label="Back to top">⬆</button>
+'
+    <script src="script.js"></script>
+
   </body>
 </html>
